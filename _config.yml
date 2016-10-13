@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Kine Sante66
+repository: jasonmaire/kine-sante66
 email: json.maire@gmail.com
 description:
   Write an awesome description for your new site here. You can edit this
@@ -26,9 +27,9 @@ github_username:  jasonmaire
 
 # Build settings
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
+#theme: minima
+#gems:
+#  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
