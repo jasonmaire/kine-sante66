@@ -11,11 +11,28 @@
         </div>
         <nav class="collapse navbar-collapse" id="site-navbar">
             <ul class="nav navbar-nav navbar-right">
-                {% for my_page in site.pages %}
-                {% if my_page.title %}
-                <li><a class="page-link" href="{{ site.baseurl }}{{ my_page.url }}">{{ my_page.title | escape }}</a></li>
-                {% endif %}
+                {% assign navigation_pages = site.pages | sort: 'nav_order' %}
+
+                {% for my_page in navigation_pages %}
+                    {% if my_page.title %}
+                        {% if my_page.nav_group and (previous_nav_group != my_page.nav_group) %}
+                            {% assign group_open = true %}
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle {% if page.nav_group == my_page.nav_group %} active {% endif %}"
+                                   data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    {{ my_page.nav_group }}
+                                </a>
+                                <ul class="dropdown-menu">
+                        {% endif %}
+                        {% if my_page.nav_group == null and previous_nav_group %}
+                            {% assign group_open = false %}
+                            </ul></li>
+                        {% endif %}
+                        <li><a class="page-link {% if page.url == my_page.url %} active {% endif %}" href="{{ site.baseurl }}{{ my_page.url }}">{{ my_page.title | escape }}</a></li>
+                        {% assign previous_nav_group = my_page.nav_group %}
+                    {% endif %}
                 {% endfor %}
+                {% if group_open %} </ul></li> {% endif %}
             </ul>
         </nav>
     </div>

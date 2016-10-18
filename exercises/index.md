@@ -2,6 +2,7 @@
 layout: page
 title: Exercices
 categories: exercises
+nav_order: 2
 ---
 
 {% for post in site.categories.exercises %}
