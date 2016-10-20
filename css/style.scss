@@ -7,3 +7,32 @@
 @import "frame";
 @import "header";
 @import "footer";
+
+
+.place-section {
+    .title {
+        font-size: 1.8em;
+    }
+    .img-container {
+        img {
+            width: 100%;
+            margin: 4px 0;
+        }
+    }
+}
+
+.team-member {
+    .title {
+        font-size: 2em;
+        font-weight: 500;
+    }
+    .job {
+        font-size: 1.5em;
+    }
+    .description {
+
+    }
+    img {
+        width: 100%;
+    }
+}

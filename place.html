@@ -4,15 +4,40 @@ title: Le cabinet
 permalink: /locaux/
 nav_order: 4
 nav_group: about
+sections:
+    - name: salle-exercices
+      title: Une salle d'exercice
+      count: 3
+    - name: collectif
+      title: Une salle de soin
+      count: 3
+    - name: individuel
+      title: Des pièces individuelles
+      count: 3
+    - name: attente
+      title: Une salle d'attente
+      count: 2
+
 ---
 
-<img src="{{ site.baseurl }}/images/cabinet-1.jpg" width="500px"/>
-<img src="{{ site.baseurl }}/images/cabinet-2.jpg" width="500px"/>
-<img src="{{ site.baseurl }}/images/cabinet-3.jpg" width="500px"/>
-<img src="{{ site.baseurl }}/images/cabinet-4.jpg" width="500px"/>
+<div class="row">
+    <div class="col-xs-12">
+    <p>
+        Vous serez accuillis dans un cadre sobre et confortable.<br/>
+        Plusieurs espaces sont à votre disposition, nous permettant de mener au mieux vos soins.
+    </p>
+    </div>
+</div>
 
-<h1>les appareils</h1>
-
-<img src="{{ site.baseurl }}/images/appareils-1.jpg" width="500px"/>
-<img src="{{ site.baseurl }}/images/appareils-2.jpg" width="500px"/>
-<img src="{{ site.baseurl }}/images/appareils-3.jpg" width="500px"/>
+<div class="row">
+    {% for section in page.sections %}
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 place-section">
+        <div class="title">{{ section.title}}</div>
+        <div class="img-container">
+            {% for i in (1..section.count) %}
+            <img src="{{ site.baseurl }}/images/{{ section.name }}-{{ i }}.jpg" />
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>

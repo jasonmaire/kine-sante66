@@ -1,6 +1,19 @@
 body {
     margin: 0;
-    background-color: $color-bg-main;
-    font-size: 0.9em;
+    background-color: $color-bg-footer;
     color: $color-ft-dark;
+}
+
+header.navbar {
+    margin-bottom: 0;
+}
+
+.page-content {
+    padding-top: 16px;
+    background-color: $color-bg-main;
+}
+
+.site-footer {
+    margin-top: 16px;
+    //background-color: $color-bg-footer;
 }

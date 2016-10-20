@@ -1,0 +1,46 @@
+---
+layout: page
+title: L'équipe
+permalink: /equipe/
+nav_order: 4
+nav_group: about
+team:
+    - firstName: John
+      lastName: Maire
+      job: Ostéopathe - Kinésithérapeute
+      description: John est blabla bla, depuis plop plop ce qui arrive de<br/>
+        tralala et sans aucun dout tagada.<br/>
+        Depuis deux ans, tac tac tagadaplop, John ni vu ni connu rik rak.<br/>
+        C'est après un court bric-à-brac,<br/>
+        youpi dans les lorem ipsum dolor sin amet.
+            
+    - firstName: Jeffrey
+      lastName: Richardson
+      job: Kinésithérapeute
+      description: Jeff est blabla bla, depuis plop plop<br/>
+        ce qui arrive de tralala et sans aucun dout tagada. Depuis deux ans,<br/>
+        tac tac tagadaplop, John ni vu ni connu rik rak.<br/>
+        C'est après un court bric-à-brac, youpi dans les lorem ipsum dolor sin amet.
+            
+    - firstName: Peter
+      lastName: McCallaway
+      job: Ostéopathe
+      description: Peter est blabla bla, depuis plop plop ce qui arrive de<br/>
+          tralala et sans aucun dout tagada.<br/>
+          Depuis deux ans, tac tac tagadaplop, John ni vu ni connu rik rak.<br/>
+          C'est après un court bric-à-brac,<br/>
+          youpi dans les lorem ipsum dolor sin amet.
+---
+
+<div class="row">
+    {% for member in page.team %}
+    <div class="team-member col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="title">{{ member.firstName}} {{ member.lastName}}</div>
+        <div class="job">{{ member.job}}</div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <img src="{{ site.baseurl }}/images/{{ member.firstName }}-{{ member.lastName }}.jpg" />
+        </div>
+        <div class="description col-xs-12 col-sm-12 col-md-6">{{ member.description}}</div>
+    </div>
+    {% endfor %}
+</div>
