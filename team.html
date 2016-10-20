@@ -38,7 +38,7 @@ team:
         <div class="title">{{ member.firstName}} {{ member.lastName}}</div>
         <div class="job">{{ member.job}}</div>
         <div class="col-xs-12 col-sm-12 col-md-6">
-            <img src="{{ site.baseurl }}/images/{{ member.firstName }}-{{ member.lastName }}.jpg" />
+            <img src="{{ site.baseurl }}/images/{{ member.firstName | downcase }}-{{ member.lastName | downcase}}.jpg" />
         </div>
         <div class="description col-xs-12 col-sm-12 col-md-6">{{ member.description}}</div>
     </div>
