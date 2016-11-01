@@ -2,11 +2,12 @@
 ---
 
 @import "colors";
+@import "bootstrap-material/bootstrap-material-design";
+@import "bootstrap-material/ripples";
+@import "variables";
 @import "bootstrap";
 
 @import "frame";
-@import "header";
-@import "footer";
 
 
 .place-section {
@@ -21,18 +22,6 @@
     }
 }
 
-.team-member {
-    .title {
-        font-size: 2em;
-        font-weight: 500;
-    }
-    .job {
-        font-size: 1.5em;
-    }
-    .description {
-
-    }
-    img {
-        width: 100%;
-    }
+.team-member .card-image-headline {
+    color: $brand-warning !important;
 }
