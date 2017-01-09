@@ -34,6 +34,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - temp-images
 sass:
   sass_dir: _sass
   style: compressed
