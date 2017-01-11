@@ -22,6 +22,31 @@
 <script src="{{ site.baseurl }}/js/material.js"></script>
 <script src="{{ site.baseurl }}/js/ripples.js"></script>
 
+{% if page.carousel %}
+<script src="{{ site.baseurl }}/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+    $(window).on('load', function() {
+        // The slider being synced must be initialized first
+        $('#carousel').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            itemWidth: 210,
+            itemMargin: 5,
+            asNavFor: '#slider'
+        });
+        $('#slider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            sync: "#carousel"
+        });
+    });
+</script>
+{% endif %}
+
 <script>$.material.init();</script>
 
 </body>
