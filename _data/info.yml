@@ -1,0 +1,18 @@
+phone: 04 68 55 29 30
+location: Clinique St Pierre - batiment D, 1er étage
+address: 80 Rue Pascal Marie Agasse
+city: Perpignan
+opening_time: Lundi au Vendredi de 8h à 19h
+traitements_kine:
+  - Les gros bobos
+  - Les petits bobos
+  - La rééducation sportive après blessure (entorse, tendinites, rupture de ligaments, déchirure musculaire, etc.)
+  - Rafermissement et/ou amincissement
+  - ...
+traitements_ostheo:
+  - Les bobos bizarres (genre t'as mal au pied droit et c'est à cause de tes dents
+  - Les problèmes de cervicales
+  - Les problèmes de gens tordus
+  - Les douleurs liées à une mauvaise posture
+  - Nous prenons aussi en charge les personnes qui aiment bien se faire faire craquer de partout
+  - ...

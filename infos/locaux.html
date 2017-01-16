@@ -1,0 +1,39 @@
+---
+layout: default
+title: Le cabinet
+permalink: /locaux/
+nav_order: 4
+nav_group: Infos pratiques
+carousel: true
+images_count: 9
+---
+
+<p>
+    Vous serez accuillis dans un cadre sobre et confortable.<br/>
+    Plusieurs espaces sont à votre disposition, nous permettant de mener au mieux vos soins.
+</p>
+
+<div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+{% if page.carousel %}
+    <div id="slider" class="flexslider">
+        <ul class="slides">
+        {% for i in (1..page.images_count) %}
+            <li>
+                <img src="{{ site.baseurl }}/images/photo-{{i}}.jpg" />
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+    <div id="carousel" class="flexslider">
+        <ul class="slides">
+        {% for i in (1..page.images_count) %}
+            <li>
+                <img src="{{ site.baseurl }}/images/thumbnails/photo-{{i}}.jpg" />
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endif %}
+</div>

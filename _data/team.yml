@@ -1,0 +1,39 @@
+description: Notre équipe est ravie de vous accueillir dans notre cabinet.<br/>
+  Nous sommes issus d'une formation française à l'IFMK de Montpellier et avons décider de travailler ensemble.<br/>
+  Nous connaissant depuis longtemps, nous formons une équipe soudée et dynamique, capable de vous offrir des soins adaptés et efficaces.
+  En plus de la Kinésithérapie, nous pouvons délivrer des actes d'Osthéopathie, acquis ici grâce à une formation française.
+members:
+  - firstName: Jonathan
+    lastName: Maire
+    job: Ostéopathe - Kinésithérapeute
+    description: John est blabla bla, depuis plop plop ce qui arrive de<br/>
+      tralala et sans aucun dout tagada.<br/>
+      Depuis deux ans, tac tac tagadaplop, John ni vu ni connu rik rak.<br/>
+      C\'est après un court bric-à-brac,<br/>
+      youpi dans les lorem ipsum dolor sin amet.
+
+  - firstName: Pierre-Yves
+    lastName: Alessandra
+    job: Kinésithérapeute
+    description: Jeff est blabla bla, depuis plop plop<br/>
+      ce qui arrive de tralala et sans aucun dout tagada. Depuis deux ans,<br/>
+      tac tac tagadaplop, John ni vu ni connu rik rak.<br/>
+      C\'est après un court bric-à-brac, youpi dans les lorem ipsum dolor sin amet.
+
+  - firstName: Mathilde
+    lastName: Pujol
+    job: Kinésithérapeute
+    description: Peter est blabla bla, depuis plop plop ce qui arrive de<br/>
+      tralala et sans aucun dout tagada.<br/>
+      Depuis deux ans, tac tac tagadaplop, John ni vu ni connu rik rak.<br/>
+      C\'est après un court bric-à-brac,<br/>
+      youpi dans les lorem ipsum dolor sin amet.
+
+  - firstName: Solenne
+    lastName: Lafont
+    job: Kinésithérapeute
+    description: Peter est blabla bla, depuis plop plop ce qui arrive de<br/>
+      tralala et sans aucun dout tagada.<br/>
+      Depuis deux ans, tac tac tagadaplop, John ni vu ni connu rik rak.<br/>
+      C\'est après un court bric-à-brac,<br/>
+      youpi dans les lorem ipsum dolor sin amet.

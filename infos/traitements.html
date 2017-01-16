@@ -1,0 +1,26 @@
+---
+layout: default
+title: Traitements
+permalink: /traitements/
+nav_order: 4
+nav_group: Infos pratiques
+---
+
+
+<h2>Liste des soins</h2>
+<p>
+    Nous soignons toutes sortes de maladies, parce qu'on est des fous!<br/>
+    La liste suivante n'est pas exhaustive, si vous souffrez d'une maladie particulière, n'hésitez pas à nous appeler, nous vous dirons si nous sommes en mesure vous prendre en charge, ou ferons de notre mieux pour vous aiguiller dans un cabinet spécialisé.
+</p>
+<ul>
+{% for traitement in site.data.info.traitements_kine %}
+    <li>{{traitement}}</li>
+{% endfor %}
+</ul>
+
+<p>Nous pratiquons aussi des soins d'<strong>ostéopathie</strong>,<br/>voici une liste des soins les plus pratiqués</p>
+<ul>
+{% for traitement in site.data.info.traitements_ostheo %}
+    <li>{{traitement}}</li>
+{% endfor %}
+</ul>

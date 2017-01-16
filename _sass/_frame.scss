@@ -1,8 +1,15 @@
+body {
+    background: url(/kine-sante66/images/photo-2.jpg);
+    background-position-y: -230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 header.navbar {
     margin-bottom: 0;
     min-height: 36px;
 
     nav {
+        font-size: 1.2em;
         .active {
             color: $brand-warning !important;
         }
@@ -19,6 +26,7 @@ header.navbar {
     .navbar-brand {
         padding: 8px 8px;
         height: 36px;
+        font-size: 1.6em;
     }
 }
 
@@ -30,7 +38,7 @@ header.navbar {
 }
 
 .page-content {
-    background-color: $grey-200;
+    background-color: rgba($grey-100, 0.95);
     font-size: 1.2em;
 }
 
